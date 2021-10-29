@@ -68,6 +68,10 @@ app.get('/', (req, res) => {
     res.send('requist has been hitted') // 1
 })
 
+app.get('/hello', (req, res)=> {
+    res.send('hello updated here')
+})
+
 app.listen(port, () => {
     console.log('port has been hitted', port); // 1
 })
