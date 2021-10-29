@@ -3,7 +3,7 @@ const { MongoClient } = require('mongodb'); // 2 connect
 require('dotenv').config()      // 2 ( for env ) 
 const cors = require('cors'); // 1
 const app = express(); // 1
-const port = 5000; // 1
+const port = process.env.PORT ||  5000; // 1
 const ObjectId = require('mongodb').ObjectId ; // 7 (id er vitorer obj er jonno)
 
 app.use(cors()); // 1
