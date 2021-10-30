@@ -65,7 +65,7 @@ run().catch(console.dir);
 // 2
 
 app.get('/', (req, res) => {
-    res.send('requist has been hitted') // 1
+    res.send('requist has been hitted in live server') // 1
 })
 
 app.get('/hello', (req, res)=> {
